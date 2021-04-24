@@ -1,0 +1,49 @@
+<html>
+ 
+<head>
+    <title>Family Book</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+ 
+<body>
+    <h1 id="one">6. My Family</h1>
+    <hr>
+    <hr>
+    <img id="family_img" src="family.JPG">
+    <button type="button" onclick="next_photo_shift()">Next Slide</button>
+    <br>
+    <hr>
+    <script>
+        var images = ["john.jpg",
+            "Maureen.jpg",
+            "judy",
+            "will.jpg",
+            "penny.png"];
+ 
+            var names = [ "John",
+            "Maureen",
+            "Judy",
+            "Will",
+            "Penny"];
+ 
+            var i = 0;
+            function next_photo_shift() {
+            
+                i++;
+                var numbers_of_family_member_in_array = 5
+                if(i > numbers_of_family_member_in_array )
+                {
+                    i = 0;
+                }
+                var updatedImage = images[i];
+                var updatedName  = names[i];
+                document.getElementById("family_img").src = updatedImage;
+                document.getElementById("one").innerHTML = updatedName;
+            }
+    </script>
+    
+</body>
+ 
+</html>
+ 

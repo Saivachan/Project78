@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    background-color: aqua;
+}
+#family_img{
+    width:290px;
+    height: 290px;
+}
+button{
+    font-size:25px;
+    background-color:aquamarine;
+    border-radius:20%;
+    color:black;
+}
+h1{
+    font-size:  40px;
+    color: blue;
+   text-decoration: underline;
+}
+h3{
+    font-size: 30px;
+    color:blue;
+    font-weight: bold;
+    text-decoration: underline;
+}
